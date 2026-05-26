@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vanessa Caredereli Advocacia — Atuação em Inventário, Herança, Partilha de Bens e Regularização Patrimonial Familiar. Orientação jurídica com clareza, segurança e tranquilidade.">
+<title>Vanessa Caredereli Advocacia — Inventário, Herança e Direito Sucessório</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     DESIGN TOKENS — Vanessa Caredereli Advocacia
+     Direção: Luxury/Refinado — sóbrio, acolhedor, autoritativo
+     ============================================================ */
+  :root {
+    /* Paleta */
+    --petroleo: #143842;
+    --petroleo-deep: #0E2A33;
+    --petroleo-mid: #1E4A56;
+    --dourado: #B08D4E;
+    --dourado-soft: #C9A769;
+    --dourado-dark: #8C6F3A;
+    --bege: #F6EFE3;
+    --bege-soft: #FAF5EB;
+    --bege-deep: #EFE5D2;
+    --grafite: #3A3F44;
+    --grafite-soft: #5C636B;
+    --branco: #FFFFFF;
+    --linha: rgba(20, 56, 66, 0.12);
+    --linha-suave: rgba(20, 56, 66, 0.07);
+    --whats: #25D366;
+    --whats-dark: #128C7E;
+
+    /* Tipografia */
+    --serif: 'Fraunces', 'Times New Roman', serif;
+    --sans: 'Manrope', system-ui, sans-serif;
+
+    /* Espaçamento */
+    --section-pad: clamp(64px, 9vw, 120px);
+    --container: 1200px;
+
+    /* Sombras */
+    --shadow-soft: 0 4px 24px -8px rgba(20, 56, 66, 0.10), 0 2px 6px -2px rgba(20, 56, 66, 0.06);
+    --shadow-medium: 0 12px 40px -12px rgba(20, 56, 66, 0.18), 0 4px 12px -4px rgba(20, 56, 66, 0.08);
+    --shadow-deep: 0 24px 60px -16px rgba(20, 56, 66, 0.28);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: var(--sans);
+    color: var(--grafite);
+    background: var(--bege-soft);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: none; background: none; }
+
+  /* Container utility */
+  .container { width: min(100% - 40px, var(--container)); margin-inline: auto; }
+
+  /* Tipografia base */
+  h1, h2, h3, h4 {
+    font-family: var(--serif);
+    color: var(--petroleo);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dourado-dark);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: var(--dourado);
+  }
+
+  .section-title {
+    font-size: clamp(28px, 4vw, 46px);
+    margin-top: 16px;
+    margin-bottom: 24px;
+    max-width: 22ch;
+  }
+
+  .section-lead {
+    font-size: clamp(16px, 1.4vw, 18px);
+    color: var(--grafite-soft);
+    max-width: 60ch;
+    line-height: 1.7;
+  }
+
+  /* ============================================================
+     BOTÕES
+     ============================================================ */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 28px;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-whats {
+    background: var(--whats);
+    color: #fff;
+    box-shadow: 0 8px 24px -6px rgba(37, 211, 102, 0.45), 0 2px 6px -2px rgba(37, 211, 102, 0.35);
+  }
+  .btn-whats:hover {
+    background: var(--whats-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -6px rgba(18, 140, 126, 0.55), 0 4px 8px -2px rgba(18, 140, 126, 0.4);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--petroleo);
+    border: 1.5px solid var(--petroleo);
+  }
+  .btn-secondary:hover {
+    background: var(--petroleo);
+    color: var(--bege-soft);
+  }
+  .btn-outline-gold {
+    background: transparent;
+    color: var(--dourado-dark);
+    border: 1.5px solid var(--dourado);
+  }
+  .btn-outline-gold:hover {
+    background: var(--dourado);
+    color: #fff;
+  }
+  .btn-large {
+    padding: 22px 40px;
+    font-size: 17px;
+  }
+  .btn-block {
+    width: 100%;
+  }
+
+  /* ============================================================
+     HEADER NAVEGAÇÃO
+     ============================================================ */
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 80;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(250, 245, 235, 0.86);
+    border-bottom: 1px solid var(--linha-suave);
+    transition: all 0.3s ease;
+  }
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: opacity 0.2s;
+  }
+  .brand:hover { opacity: 0.85; }
+  .brand-logo {
+    height: 42px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+  .footer-brand .brand-logo { height: 56px; }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    color: var(--grafite);
+    transition: color 0.2s;
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--dourado-dark); }
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .nav-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--petroleo);
+    transition: color 0.2s;
+    font-family: var(--serif);
+    font-style: italic;
+    letter-spacing: 0.01em;
+  }
+  .nav-phone svg {
+    width: 15px;
+    height: 15px;
+    color: var(--dourado-dark);
+  }
+  .nav-phone:hover { color: var(--dourado-dark); }
+  .nav-whats {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: var(--petroleo);
+    color: var(--bege-soft);
+    transition: all 0.2s;
+  }
+  .nav-whats:hover { background: var(--petroleo-deep); }
+  .menu-toggle { display: none; }
+  @media (max-width: 720px) {
+    .nav-phone { display: none; }
+  }
+  @media (max-width: 880px) {
+    .nav-links { display: none; }
+  }
+  @media (max-width: 560px) {
+    .brand-logo { height: 36px; }
+    .nav-whats span { display: none; }
+    .nav-whats { padding: 10px 12px; }
+  }
+  @media (max-width: 380px) {
+    .brand-logo { height: 32px; }
+  }
+
+  /* ============================================================
+     HERO
+     ============================================================ */
+  .hero {
+    position: relative;
+    padding: 160px 0 var(--section-pad);
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at top right, rgba(176, 141, 78, 0.08), transparent 60%),
+      linear-gradient(180deg, var(--bege-soft) 0%, var(--bege) 100%);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.075 0 0 0 0 0.22 0 0 0 0 0.26 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.5;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+  .hero-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(40px, 6vw, 80px);
+    align-items: center;
+  }
+  .hero-content { position: relative; }
+  .hero-title {
+    font-size: clamp(36px, 5.5vw, 64px);
+    line-height: 1.05;
+    margin: 22px 0 28px;
+    letter-spacing: -0.02em;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--dourado-dark);
+    font-weight: 300;
+  }
+  .hero-sub {
+    font-size: clamp(15px, 1.3vw, 17px);
+    color: var(--grafite-soft);
+    line-height: 1.75;
+    max-width: 52ch;
+    margin-bottom: 36px;
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+  }
+  .hero-trust {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--linha);
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .trust-num {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--petroleo);
+    font-weight: 500;
+  }
+  .trust-num em {
+    color: var(--dourado);
+    font-style: italic;
+    font-weight: 300;
+  }
+  .trust-label {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--grafite-soft);
+    margin-top: 2px;
+  }
+
+  /* Hero Visual — composição editorial */
+  .hero-visual {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    margin-left: auto;
+    background: var(--bege-deep);
+  }
+  .hero-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: var(--shadow-deep);
+    background: var(--petroleo);
+  }
+  .hero-img-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    display: block;
+    border-radius: 2px;
+  }
+  .hero-img-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(14, 42, 51, 0.78) 100%);
+    pointer-events: none;
+  }
+  .hero-frame-gold {
+    position: absolute;
+    top: 22px; left: 22px;
+    right: -22px; bottom: -22px;
+    border: 1px solid var(--dourado);
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(14, 42, 51, 0.88);
+    border: 1px solid rgba(201, 167, 105, 0.32);
+    padding: 16px 20px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 2px;
+    z-index: 2;
+  }
+  .hero-badge-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--bege-soft);
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+  .hero-badge-text {
+    font-size: 11px;
+    color: var(--dourado-soft);
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-visual { margin: 24px auto 0; max-width: 460px; }
+  }
+  @media (max-width: 480px) {
+    .hero-badge { padding: 14px 16px; }
+    .hero-badge-title { font-size: 15px; }
+    .hero-badge-text { font-size: 10px; letter-spacing: 0.1em; }
+    .hero-frame-gold { top: 14px; left: 14px; right: -14px; bottom: -14px; }
+  }
+
+  /* ============================================================
+     SEÇÃO 2 — IDENTIFICAÇÃO DO PROBLEMA
+     ============================================================ */
+  .problems {
+    padding: var(--section-pad) 0;
+    background: var(--branco);
+    position: relative;
+  }
+  .section-head {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .section-head .section-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-head .section-lead {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .problem-card {
+    background: var(--bege-soft);
+    padding: 36px 30px;
+    border-radius: 4px;
+    border: 1px solid var(--linha-suave);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .problem-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--dourado);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .problem-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+    background: var(--branco);
+  }
+  .problem-card:hover::before { transform: scaleX(1); }
+  .problem-icon {
+    width: 44px;
+    height: 44px;
+    color: var(--dourado-dark);
+    margin-bottom: 20px;
+  }
+  .problem-icon svg { width: 100%; height: 100%; }
+  .problem-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--grafite);
+  }
+  .problems-conclusion {
+    margin-top: 64px;
+    text-align: center;
+    padding: 40px;
+    background: var(--petroleo);
+    color: var(--bege-soft);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .problems-conclusion::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--dourado);
+  }
+  .problems-conclusion p {
+    font-family: var(--serif);
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.5;
+    max-width: 60ch;
+    margin: 0 auto 28px;
+    font-weight: 400;
+  }
+
+  /* ============================================================
+     SEÇÃO 3 — SOBRE INVENTÁRIO
+     ============================================================ */
+  .about-inv {
+    padding: var(--section-pad) 0;
+    background: var(--bege-soft);
+  }
+  .about-inv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 80px);
+    align-items: center;
+  }
+  .about-inv-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--grafite-soft);
+    margin-top: 24px;
+  }
+  .about-inv-highlight {
+    background: var(--bege);
+    border-left: 3px solid var(--dourado);
+    padding: 32px 36px;
+    margin-top: 36px;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+  }
+  .about-inv-highlight::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    font-family: var(--serif);
+    font-size: 60px;
+    color: var(--dourado);
+    line-height: 1;
+    font-style: italic;
+  }
+  .about-inv-highlight p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--petroleo);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .about-inv-visual {
+    position: relative;
+    aspect-ratio: 1/1.1;
+    background-image: url("https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=900&q=85&auto=format");
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    box-shadow: var(--shadow-medium);
+    filter: saturate(0.8);
+  }
+  .about-inv-visual::after {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(176, 141, 78, 0.6);
+    pointer-events: none;
+  }
+  @media (max-width: 900px) {
+    .about-inv-grid { grid-template-columns: 1fr; }
+    .about-inv-visual { max-height: 420px; }
+  }
+
+  /* ============================================================
+     SEÇÃO 4 — TIPOS DE INVENTÁRIO
+     ============================================================ */
+  .types {
+    padding: var(--section-pad) 0;
+    background: var(--branco);
+  }
+  .types-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+  .type-card {
+    background: var(--bege-soft);
+    padding: clamp(32px, 4vw, 48px);
+    border-radius: 4px;
+    border: 1px solid var(--linha-suave);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .type-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+  }
+  .type-card.featured {
+    background: var(--petroleo);
+    color: var(--bege-soft);
+    border-color: var(--petroleo);
+  }
+  .type-card.featured h3 { color: var(--bege-soft); }
+  .type-card.featured .type-tag { color: var(--dourado-soft); }
+  .type-tag {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dourado-dark);
+    font-weight: 600;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .type-card h3 {
+    font-size: clamp(22px, 2.4vw, 30px);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .type-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: inherit;
+    opacity: 0.92;
+  }
+  .type-card.featured p { color: rgba(246, 239, 227, 0.85); }
+  .type-num {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 38px;
+    color: var(--dourado);
+    line-height: 1;
+    opacity: 0.55;
+  }
+  .types-cta {
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    .types-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ============================================================
+     SEÇÃO 5 — RISCOS
+     ============================================================ */
+  .risks {
+    padding: var(--section-pad) 0;
+    background: var(--petroleo-deep);
+    color: var(--bege-soft);
+    position: relative;
+    overflow: hidden;
+  }
+  .risks::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.7 0 0 0 0 0.55 0 0 0 0 0.3 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  .risks .container { position: relative; z-index: 2; }
+  .risks .section-head .section-title { color: var(--bege-soft); }
+  .risks .section-head .section-lead { color: rgba(246, 239, 227, 0.7); }
+  .risks .eyebrow { color: var(--dourado-soft); }
+  .risks .eyebrow::before { background: var(--dourado-soft); }
+  .risks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0;
+    border: 1px solid rgba(201, 167, 105, 0.18);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 56px;
+  }
+  .risk-item {
+    padding: 28px 30px;
+    border-right: 1px solid rgba(201, 167, 105, 0.18);
+    border-bottom: 1px solid rgba(201, 167, 105, 0.18);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: background 0.3s;
+  }
+  .risk-item:hover { background: rgba(201, 167, 105, 0.06); }
+  .risk-mark {
+    color: var(--dourado-soft);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .risk-text {
+    font-size: 15.5px;
+    line-height: 1.55;
+    color: rgba(246, 239, 227, 0.92);
+  }
+  .risks-closing {
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto;
+    font-family: var(--serif);
+    font-size: clamp(19px, 2.2vw, 26px);
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--bege-soft);
+  }
+  .risks-closing em {
+    font-style: italic;
+    color: var(--dourado-soft);
+  }
+
+  /* ============================================================
+     SEÇÃO 6 — ATUAÇÃO
+     ============================================================ */
+  .services {
+    padding: var(--section-pad) 0;
+    background: var(--bege);
+  }
+  .services-intro {
+    max-width: 70ch;
+    margin: 0 auto 56px;
+    text-align: center;
+  }
+  .services-intro p {
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--grafite-soft);
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0;
+    border: 1px solid var(--linha);
+    background: var(--linha-suave);
+  }
+  .service-cell {
+    background: var(--bege-soft);
+    padding: 32px 26px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1px solid transparent;
+    min-height: 180px;
+  }
+  .service-cell:hover {
+    background: var(--branco);
+    transform: scale(1.02);
+    z-index: 1;
+    box-shadow: var(--shadow-medium);
+    border-color: var(--dourado);
+  }
+  .service-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--dourado-dark);
+    letter-spacing: 0.05em;
+  }
+  .service-title {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--petroleo);
+    line-height: 1.3;
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  /* ============================================================
+     SEÇÃO 7 — PROCESSO (TIMELINE)
+     ============================================================ */
+  .process {
+    padding: var(--section-pad) 0;
+    background: var(--branco);
+  }
+  .process-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    bottom: 30px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--dourado) 0%, var(--linha) 100%);
+  }
+  .process-step {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 48px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+  }
+  .process-step.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .process-step:last-child { margin-bottom: 0; }
+  .process-step-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--bege-soft);
+    border: 1px solid var(--dourado);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--dourado-dark);
+    font-weight: 500;
+  }
+  .process-step h4 {
+    font-size: clamp(20px, 2vw, 24px);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .process-step p {
+    font-size: 16px;
+    color: var(--grafite-soft);
+    line-height: 1.7;
+    max-width: 60ch;
+  }
+  .process-cta {
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  /* ============================================================
+     SEÇÃO 8 — EMOCIONAL
+     ============================================================ */
+  .emotional {
+    padding: var(--section-pad) 0;
+    background: var(--bege-soft);
+    position: relative;
+  }
+  .emotional-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: clamp(40px, 6vw, 80px);
+    align-items: center;
+  }
+  .emotional-visual {
+    aspect-ratio: 4/5;
+    background-image: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=85&auto=format");
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    box-shadow: var(--shadow-medium);
+    position: relative;
+    filter: saturate(0.7) contrast(1.02);
+  }
+  .emotional-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(20, 56, 66, 0.4));
+    border-radius: 2px;
+  }
+  .emotional-content h2 {
+    font-size: clamp(28px, 3.6vw, 42px);
+    margin-bottom: 28px;
+    line-height: 1.15;
+  }
+  .emotional-content h2 em {
+    font-style: italic;
+    color: var(--dourado-dark);
+    font-weight: 300;
+  }
+  .emotional-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--grafite-soft);
+    margin-bottom: 20px;
+  }
+  @media (max-width: 900px) {
+    .emotional-grid { grid-template-columns: 1fr; }
+    .emotional-visual { max-height: 480px; order: -1; }
+  }
+
+  /* ============================================================
+     SEÇÃO 9 — FAQ
+     ============================================================ */
+  .faq {
+    padding: var(--section-pad) 0;
+    background: var(--branco);
+  }
+  .faq-list {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--linha);
+    padding: 0;
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: var(--serif);
+    font-size: clamp(17px, 1.8vw, 21px);
+    color: var(--petroleo);
+    font-weight: 500;
+    line-height: 1.3;
+    transition: color 0.2s;
+  }
+  .faq-question:hover { color: var(--dourado-dark); }
+  .faq-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: 1px solid var(--dourado);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .faq-icon::before,
+  .faq-icon::after {
+    content: '';
+    position: absolute;
+    background: var(--dourado-dark);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .faq-icon::before { width: 12px; height: 1.5px; }
+  .faq-icon::after { width: 1.5px; height: 12px; transition: transform 0.3s ease; }
+  .faq-item.open .faq-icon {
+    background: var(--dourado);
+  }
+  .faq-item.open .faq-icon::before,
+  .faq-item.open .faq-icon::after { background: #fff; }
+  .faq-item.open .faq-icon::after { transform: translate(-50%, -50%) scaleY(0); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .faq-answer-inner {
+    padding: 0 0 28px;
+    color: var(--grafite-soft);
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 70ch;
+  }
+
+  /* ============================================================
+     SEÇÃO 10 — CTA FINAL
+     ============================================================ */
+  .final-cta {
+    padding: var(--section-pad) 0;
+    background:
+      radial-gradient(ellipse at center, rgba(176, 141, 78, 0.15), transparent 70%),
+      linear-gradient(180deg, var(--petroleo) 0%, var(--petroleo-deep) 100%);
+    color: var(--bege-soft);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 0.85 0 0 0 0 0.5 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  .final-cta .container { position: relative; z-index: 2; }
+  .final-cta .eyebrow { color: var(--dourado-soft); }
+  .final-cta .eyebrow::before { background: var(--dourado-soft); }
+  .final-cta-title {
+    font-size: clamp(32px, 5vw, 56px);
+    color: var(--bege-soft);
+    margin: 20px auto 24px;
+    max-width: 22ch;
+    line-height: 1.1;
+  }
+  .final-cta-title em {
+    font-style: italic;
+    color: var(--dourado-soft);
+    font-weight: 300;
+  }
+  .final-cta-sub {
+    max-width: 56ch;
+    margin: 0 auto 44px;
+    font-size: clamp(16px, 1.4vw, 18px);
+    color: rgba(246, 239, 227, 0.8);
+    line-height: 1.75;
+  }
+  .final-cta-button {
+    margin-bottom: 18px;
+  }
+  .final-cta-micro {
+    font-size: 13px;
+    color: rgba(246, 239, 227, 0.55);
+    letter-spacing: 0.05em;
+  }
+  .ornament-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .ornament-divider span {
+    width: 60px; height: 1px;
+    background: rgba(201, 167, 105, 0.5);
+  }
+  .ornament-divider svg {
+    width: 18px; height: 18px;
+    color: var(--dourado-soft);
+  }
+
+  /* ============================================================
+     RODAPÉ
+     ============================================================ */
+  footer {
+    background: var(--petroleo-deep);
+    color: rgba(246, 239, 227, 0.7);
+    padding: 80px 0 36px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(201, 167, 105, 0.15);
+  }
+  .footer-brand .brand-name {
+    color: var(--bege-soft);
+    font-size: 22px;
+  }
+  .footer-brand .brand-mark {
+    background: transparent;
+    color: var(--dourado-soft);
+    border-color: var(--dourado-soft);
+  }
+  .footer-brand-desc {
+    margin-top: 20px;
+    max-width: 36ch;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: rgba(246, 239, 227, 0.65);
+  }
+  .footer-oab {
+    margin-top: 14px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    color: var(--dourado-soft);
+  }
+  .footer-col h5 {
+    font-family: var(--sans);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--dourado-soft);
+    margin-bottom: 22px;
+    font-weight: 600;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .footer-col a {
+    font-size: 14.5px;
+    color: rgba(246, 239, 227, 0.75);
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer-col a:hover { color: var(--dourado-soft); }
+  .footer-col a svg { width: 16px; height: 16px; }
+  .footer-bottom {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .footer-copyright {
+    font-size: 12px;
+    color: rgba(246, 239, 227, 0.45);
+  }
+  .footer-disclaimer {
+    font-size: 11.5px;
+    color: rgba(246, 239, 227, 0.45);
+    max-width: 50ch;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  @media (max-width: 880px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* ============================================================
+     WHATSAPP FLUTUANTE
+     ============================================================ */
+  .float-whats {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 90;
+    width: 62px;
+    height: 62px;
+    background: var(--whats);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    box-shadow: 0 12px 32px -8px rgba(37, 211, 102, 0.55), 0 4px 12px -2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    animation: pulse 2.4s infinite;
+  }
+  .float-whats:hover {
+    transform: scale(1.08);
+    background: var(--whats-dark);
+  }
+  .float-whats svg { width: 30px; height: 30px; }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 12px 32px -8px rgba(37, 211, 102, 0.55), 0 4px 12px -2px rgba(0,0,0,0.15), 0 0 0 0 rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 12px 32px -8px rgba(37, 211, 102, 0.55), 0 4px 12px -2px rgba(0,0,0,0.15), 0 0 0 14px rgba(37, 211, 102, 0); }
+  }
+
+  /* ============================================================
+     ENTRADAS ANIMADAS
+     ============================================================ */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-content > * { animation: fadeUp 0.8s ease-out both; }
+  .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-content > *:nth-child(2) { animation-delay: 0.25s; }
+  .hero-content > *:nth-child(3) { animation-delay: 0.4s; }
+  .hero-content > *:nth-child(4) { animation-delay: 0.55s; }
+  .hero-content > *:nth-child(5) { animation-delay: 0.7s; }
+  .hero-visual { animation: fadeUp 1s ease-out 0.3s both; }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--dourado);
+    color: var(--bege-soft);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="#top" class="brand" aria-label="Vanessa Caredereli Advogada — OAB/SC 25.666-B">
+      <img src="lalla-1024x239.png" alt="Vanessa Caredereli Advogada — OAB/SC 25.666-B" class="brand-logo">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#problema">Sua situação</a></li>
+        <li><a href="#inventario">Inventário</a></li>
+        <li><a href="#atuacao">Atuação</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="https://viaextrajud.com.br/#" target="_blank" rel="noopener" class="nav-phone" aria-label="Telefone para contato">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +55 (47) 98837-6782
+      </a>
+      <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20invent%C3%A1rio%2Fheran%C3%A7a." target="_blank" rel="noopener" class="nav-whats">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================
+     1. HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Inventário · Herança · Partilha de bens</span>
+        <h1 class="hero-title">
+          Perder alguém já é difícil demais. <em>Cuidar dos papéis e bens</em> não precisa ser.
+        </h1>
+        <p class="hero-sub">
+          Sabemos como esse momento é confuso e doloroso. Documentos que você nunca viu antes, prazos que ninguém te explicou, discussões difíceis dentro da família… Estamos aqui para te ajudar a atravessar tudo isso com calma — em uma linguagem clara, sem juridiquês, e respeitando o seu tempo.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20Vanessa.%20Gostaria%20de%20conversar%20sobre%20a%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-whats">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+            Falar com a Vanessa no WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-num">Acolhimento<em>.</em></span>
+            <span class="trust-label">Você é ouvido, não julgado</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">Clareza<em>.</em></span>
+            <span class="trust-label">Sem jargões. Tudo explicado.</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">Sigilo<em>.</em></span>
+            <span class="trust-label">Seu caso, sua privacidade</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-frame-gold" aria-hidden="true"></div>
+        <div class="hero-img-wrap">
+          <img src="fotow.png" alt="Vanessa Caredereli, advogada especializada em inventário e herança" class="hero-img-main" loading="eager" width="520" height="650">
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-title">Vanessa Caredereli</div>
+          <div class="hero-badge-text">Advogada · OAB/SC 25.666-B</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     2. PROBLEMA
+     ============================================================ -->
+<section class="problems" id="problema">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Talvez você se reconheça aqui</span>
+      <h2 class="section-title">Alguma dessas situações parece com a sua?</h2>
+      <p class="section-lead">Você não é o único. Todos os dias, famílias passam por momentos como esses — e quase sempre se sentem perdidas. Saber que tem solução é o primeiro passo.</p>
+    </div>
+
+    <div class="problems-grid">
+      <div class="problem-card reveal">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 6L6 14v8c0 11 7.6 18 18 20 10.4-2 18-9 18-20v-8L24 6z"/><path d="M18 24l4 4 8-8" stroke-width="1.6"/></svg>
+        </div>
+        <p class="problem-text">Alguém da sua família faleceu e você está perdido. Não sabe o que fazer, por onde começar, nem com quem falar.</p>
+      </div>
+
+      <div class="problem-card reveal">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="14" cy="18" r="5"/><circle cx="34" cy="18" r="5"/><path d="M6 38c0-5 4-9 8-9s8 4 8 9M26 38c0-5 4-9 8-9s8 4 8 9"/><path d="M22 24l4 4M26 24l-4 4" stroke-width="1.6"/></svg>
+        </div>
+        <p class="problem-text">A família começou a discutir. Irmãos não estão se entendendo sobre a divisão. Conversas que antes eram tranquilas ficaram tensas.</p>
+      </div>
+
+      <div class="problem-card reveal">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 40V20l16-10 16 10v20"/><path d="M8 40h32M18 40V28h12v12"/><circle cx="24" cy="22" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <p class="problem-text">Tem casa, terreno, carro, dinheiro no banco ou uma empresa em nome de quem partiu — e tudo está parado, bloqueado, sem solução.</p>
+      </div>
+
+      <div class="problem-card reveal">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="18"/><path d="M19 19c0-3 2-5 5-5s5 2 5 5c0 3-5 4-5 7M24 33h.02" stroke-width="1.6"/></svg>
+        </div>
+        <p class="problem-text">Você não tem certeza se tem direito a alguma coisa — ou está em dúvida sobre quem deveria herdar o quê.</p>
+      </div>
+
+      <div class="problem-card reveal">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l6 4" stroke-width="1.6"/><path d="M14 36l5-5M34 36l-5-5" stroke-width="1.2"/></svg>
+        </div>
+        <p class="problem-text">O inventário até começou, mas travou. Meses se passaram, papel vai e papel volta, e ninguém te dá uma resposta clara.</p>
+      </div>
+
+      <div class="problem-card reveal">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 8h18l8 8v24a2 2 0 01-2 2H12a2 2 0 01-2-2V10a2 2 0 012-2z"/><path d="M28 8v10h10M18 26h12M18 32h12M18 20h6" stroke-width="1.2"/></svg>
+        </div>
+        <p class="problem-text">Você quer deixar tudo organizado agora — para que, lá na frente, a sua família não passe pelo que você está vendo outras passarem.</p>
+      </div>
+    </div>
+
+    <div class="problems-conclusion reveal">
+      <p>Quanto mais cedo você buscar ajuda, mais simples tudo fica. Esperar costuma transformar um problema só em vários — e o que era resolvível em meses, vira anos de dor de cabeça.</p>
+      <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20o%20meu%20caso." target="_blank" rel="noopener" class="btn btn-outline-gold" style="border-color: var(--dourado-soft); color: var(--dourado-soft);">
+        Quero conversar sobre o meu caso
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. SOBRE INVENTÁRIO
+     ============================================================ -->
+<section class="about-inv" id="inventario">
+  <div class="container">
+    <div class="about-inv-grid">
+      <div class="about-inv-text reveal">
+        <span class="eyebrow">Em palavras simples</span>
+        <h2 class="section-title">Mas afinal, o que é esse tal de inventário?</h2>
+        <p>Quando alguém da família falece e deixa qualquer coisa em nome dela — uma casa, um terreno, um carro, dinheiro no banco, uma empresa, qualquer bem —, é preciso fazer um processo chamado <strong style="color: var(--petroleo); font-weight: 600;">inventário</strong>.</p>
+        <p>Pense nele como uma "organização oficial" de tudo o que foi deixado. É o inventário que vai dizer, com validade legal, <em>quais bens existem</em>, <em>quem são os herdeiros</em> e <em>como tudo será dividido</em> entre eles.</p>
+
+        <div class="about-inv-highlight">
+          <p>Sem o inventário, é como se os bens continuassem "congelados" em nome de quem se foi. Ninguém pode vender, transferir, alugar ou usar com segurança.</p>
+        </div>
+      </div>
+
+      <div class="about-inv-visual reveal" role="img" aria-label="Documentos e contratos sobre uma mesa de madeira"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. TIPOS DE INVENTÁRIO
+     ============================================================ -->
+<section class="types">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Existem dois caminhos</span>
+      <h2 class="section-title">Qual é o caminho do seu caso?</h2>
+      <p class="section-lead">Cada família tem a sua história. Dependendo da sua situação, existe um caminho mais simples — ou outro que exige um pouquinho mais de tempo. A gente te ajuda a entender qual é o seu.</p>
+    </div>
+
+    <div class="types-grid">
+      <div class="type-card reveal">
+        <span class="type-num">01</span>
+        <span class="type-tag">Caminho mais rápido</span>
+        <h3>Inventário em cartório</h3>
+        <p>Quando todos os herdeiros estão de acordo com a divisão, são maiores de idade e não há briga, dá para resolver direto em cartório. É geralmente mais rápido, com menos burocracia e mais barato.</p>
+      </div>
+
+      <div class="type-card featured reveal">
+        <span class="type-num">02</span>
+        <span class="type-tag">Caminho na Justiça</span>
+        <h3>Inventário judicial</h3>
+        <p>Quando existem filhos menores, alguém discordando, testamento envolvido, ou a família simplesmente não chegou a um acordo — é preciso resolver na Justiça. Demora um pouco mais, mas garante que cada um tenha seus direitos respeitados.</p>
+      </div>
+    </div>
+
+    <div class="types-cta reveal">
+      <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20n%C3%A3o%20sei%20qual%20caminho%20%C3%A9%20o%20meu%20caso.%20Pode%20me%20ajudar%20a%20entender%3F" target="_blank" rel="noopener" class="btn btn-secondary">
+        Não sei qual é o meu caso — me ajude a entender
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. RISCOS
+     ============================================================ -->
+<section class="risks">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O que costuma acontecer</span>
+      <h2 class="section-title">Quando o inventário fica para depois, os problemas se acumulam</h2>
+      <p class="section-lead">Adiar parece a saída mais tranquila no momento. Mas, com o tempo, vão aparecendo situações que poderiam ter sido evitadas:</p>
+    </div>
+
+    <div class="risks-list">
+      <div class="risk-item"><span class="risk-mark">i.</span><span class="risk-text">A casa da família não pode ser vendida nem alugada. Fica parada, juntando contas.</span></div>
+      <div class="risk-item"><span class="risk-mark">ii.</span><span class="risk-text">Irmãos começam a não se falar. Brigas que duram anos — às vezes, a vida inteira.</span></div>
+      <div class="risk-item"><span class="risk-mark">iii.</span><span class="risk-text">Multas e impostos atrasados começam a correr. A conta só aumenta.</span></div>
+      <div class="risk-item"><span class="risk-mark">iv.</span><span class="risk-text">O carro fica parado na garagem perdendo valor a cada mês.</span></div>
+      <div class="risk-item"><span class="risk-mark">v.</span><span class="risk-text">O dinheiro guardado no banco fica bloqueado. Ninguém consegue mexer.</span></div>
+      <div class="risk-item"><span class="risk-mark">vi.</span><span class="risk-text">Filhos e netos crescem sem saber, de verdade, o que é deles.</span></div>
+    </div>
+
+    <p class="risks-closing">
+      Resolver com calma e orientação profissional é a forma mais segura de <em>proteger o patrimônio da sua família</em> — e evitar que esse momento já difícil se torne ainda mais pesado.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. ATUAÇÃO
+     ============================================================ -->
+<section class="services" id="atuacao">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Como podemos te ajudar</span>
+      <h2 class="section-title">Em quais situações você pode contar com a gente</h2>
+    </div>
+
+    <div class="services-intro reveal">
+      <p>Cuidamos de tudo o que envolve a parte jurídica de uma herança — desde o primeiro passo do inventário até a regularização final dos bens em nome dos herdeiros. Sempre com atendimento humano, claro e respeitando o momento da sua família.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-cell"><span class="service-num">01</span><span class="service-title">Inventário pela Justiça</span></div>
+      <div class="service-cell"><span class="service-num">02</span><span class="service-title">Inventário em cartório</span></div>
+      <div class="service-cell"><span class="service-num">03</span><span class="service-title">Divisão de bens entre herdeiros</span></div>
+      <div class="service-cell"><span class="service-num">04</span><span class="service-title">Regularização de imóveis herdados</span></div>
+      <div class="service-cell"><span class="service-num">05</span><span class="service-title">Orientação para quem é herdeiro</span></div>
+      <div class="service-cell"><span class="service-num">06</span><span class="service-title">Conflitos familiares por herança</span></div>
+      <div class="service-cell"><span class="service-num">07</span><span class="service-title">Testamento e planejamento da herança</span></div>
+      <div class="service-cell"><span class="service-num">08</span><span class="service-title">Liberação de valores em conta de pessoa falecida</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. PROCESSO / TIMELINE
+     ============================================================ -->
+<section class="process" id="processo">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Sem mistério, sem surpresas</span>
+      <h2 class="section-title">Como funciona o nosso atendimento</h2>
+      <p class="section-lead">Um caminho simples e organizado. Você sempre saberá onde estamos e o que vem em seguida — nada de ficar no escuro esperando notícias.</p>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-step">
+        <div class="process-step-num">i</div>
+        <h4>Você nos chama no WhatsApp</h4>
+        <p>Você conta brevemente o que está acontecendo. A gente já te dá uma primeira orientação e explica os próximos passos — sem compromisso.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step-num">ii</div>
+        <h4>Analisamos o seu caso com calma</h4>
+        <p>Olhamos juntos quais bens existem, quem são os herdeiros, quais documentos você já tem em mãos e se há algum ponto que precisa de atenção.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step-num">iii</div>
+        <h4>Definimos o melhor caminho</h4>
+        <p>Te explicamos, em linguagem simples, se o seu caso pode ir pelo cartório (mais rápido) ou precisa ser resolvido na Justiça — e o porquê.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step-num">iv</div>
+        <h4>Cuidamos de tudo, do começo ao fim</h4>
+        <p>A partir daí, conduzimos cada etapa do processo. Você é avisado a cada passo, sem precisar correr atrás de informação.</p>
+      </div>
+    </div>
+
+    <div class="process-cta">
+      <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20quero%20iniciar%20o%20atendimento." target="_blank" rel="noopener" class="btn btn-whats">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+        Iniciar atendimento agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. EMOCIONAL
+     ============================================================ -->
+<section class="emotional">
+  <div class="container">
+    <div class="emotional-grid">
+      <div class="emotional-visual reveal" role="img" aria-label="Mãos sobrepostas em apoio sobre documentos"></div>
+      <div class="emotional-content reveal">
+        <span class="eyebrow">Você não está sozinho(a) nessa</span>
+        <h2>Esse momento é difícil. Mas você não precisa atravessá-lo <em>sozinho</em>.</h2>
+        <p>Herança não é só uma questão de papéis e bens. É também emoção, lembrança, mágoa, medo de errar, conversas difíceis com quem a gente ama. A gente entende — e por isso atende cada família com o cuidado que esse momento pede.</p>
+        <p>Ter alguém ao seu lado, com calma, paciência e conhecimento, faz com que decisões pesadas fiquem mais leves. E evita que um problema que ainda tem solução vire um conflito que dura anos.</p>
+        <div style="margin-top: 32px;">
+          <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20a%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-secondary">
+            Quero conversar com cuidado e sigilo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9. FAQ
+     ============================================================ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Vamos esclarecer</span>
+      <h2 class="section-title">As perguntas que mais ouvimos</h2>
+      <p class="section-lead">Respostas em linguagem simples, sem termos complicados. Se a sua dúvida não estiver aqui, é só chamar a gente no WhatsApp.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Eu sou obrigado(a) a fazer inventário?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sim. Sempre que alguém falece e deixa bens em nome dela, o inventário é necessário para que tudo possa ser passado oficialmente para os herdeiros. Sem ele, os bens ficam "presos" — não podem ser vendidos, transferidos nem usados regularmente.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Dá para fazer tudo em cartório, sem precisar ir para a Justiça?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sim, desde que alguns requisitos sejam cumpridos: todos os herdeiros precisam estar de acordo, ser maiores de idade e não pode haver testamento ou impedimentos específicos. Quando dá para fazer em cartório, costuma ser bem mais rápido e simples.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Quanto tempo leva um inventário?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Depende muito do caso. Quando todos estão de acordo e a documentação está em dia, pode ser resolvido em poucos meses. Quando há discordâncias, bens em outras cidades ou documentos a regularizar, leva mais tempo. Na primeira conversa, conseguimos te dar uma noção realista para o seu caso.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Eu preciso mesmo de um(a) advogado(a) para isso?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sim, e isso vale tanto para o cartório quanto para a Justiça — a lei exige a presença de advogado(a). Mais do que uma obrigação, é o que garante que o seu direito (e o de toda a família) seja respeitado, sem armadilhas e sem prejuízos.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>E se a família não estiver concordando com a divisão?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">É bem mais comum do que se imagina. Nesses casos, o caminho costuma ser a Justiça, para que cada herdeiro tenha seu direito garantido com segurança. Antes disso, sempre buscamos um caminho de diálogo e acordo — porque isso poupa tempo, dinheiro e sofrimento para todos.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10. CTA FINAL
+     ============================================================ -->
+<section class="final-cta" id="contato">
+  <div class="container">
+    <div class="ornament-divider">
+      <span></span>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L13.5 9.5L21 11L13.5 12.5L12 20L10.5 12.5L3 11L10.5 9.5L12 2Z"/></svg>
+      <span></span>
+    </div>
+    <span class="eyebrow">Estamos aqui quando você precisar</span>
+    <h2 class="final-cta-title">Conversar é o primeiro passo para <em>resolver com tranquilidade</em>.</h2>
+    <p class="final-cta-sub">Mande uma mensagem no WhatsApp e conte, brevemente, o que está acontecendo. A gente te escuta, esclarece suas dúvidas e te orienta sobre o que pode ser feito — sem compromisso, sem juridiquês, no seu tempo.</p>
+
+    <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20uma%20advogada%20sobre%20invent%C3%A1rio%2Fheran%C3%A7a." target="_blank" rel="noopener" class="btn btn-whats btn-large final-cta-button">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+      Chamar a Vanessa no WhatsApp
+    </a>
+    <p class="final-cta-micro">Atendimento humano, com escuta e sigilo. Sem juridiquês.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     RODAPÉ
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="Vanessa Caredereli Advogada — OAB/SC 25.666-B">
+          <img src="lalla-1024x239.png" alt="Vanessa Caredereli Advogada" class="brand-logo">
+        </a>
+        <p class="footer-brand-desc">Atuação em Inventário, Herança e Direito Sucessório. Orientação jurídica clara, humanizada e sigilosa para famílias que precisam atravessar momentos delicados.</p>
+        <p class="footer-oab">OAB/SC 25.666-B</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li>
+            <a href="https://viaextrajud.com.br/#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +55 (47) 98837-6782
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20uma%20advogada." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+              Conversar pelo WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="mailto:vcardereli@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M22 7L12 13L2 7"/></svg>
+              vcardereli@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#problema">Sua situação</a></li>
+          <li><a href="#inventario">Sobre inventário</a></li>
+          <li><a href="#atuacao">Áreas de atuação</a></li>
+          <li><a href="#processo">Atendimento</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Vanessa Caredereli Advocacia. Todos os direitos reservados.</p>
+      <p class="footer-disclaimer">As informações deste site possuem caráter informativo e não substituem a análise individualizada do caso por uma profissional habilitada.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/5547988376782?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20uma%20advogada." target="_blank" rel="noopener" class="float-whats" aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+</a>
+
+<script>
+  /* ============================================================
+     FAQ ACORDEÃO
+     ============================================================ */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+
+      // Fecha todos
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-answer').style.maxHeight = null;
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Abre se não estava aberto
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ============================================================
+     SCROLL REVEAL
+     ============================================================ */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        if (entry.target.classList.contains('process-step')) {
+          entry.target.classList.add('visible');
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal, .process-step').forEach(el => observer.observe(el));
+
+  /* ============================================================
+     STAGGER ANIMATION — Problem Cards
+     ============================================================ */
+  document.querySelectorAll('.problem-card').forEach((card, i) => {
+    card.style.transitionDelay = `${i * 0.08}s`;
+  });
+  document.querySelectorAll('.service-cell').forEach((cell, i) => {
+    cell.style.transitionDelay = `${i * 0.05}s`;
+  });
+
+  /* ============================================================
+     SMOOTH SCROLL EXTRA
+     ============================================================ */
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href === '#' || href.length <= 1) return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  /* ============================================================
+     TOPBAR SCROLL STATE
+     ============================================================ */
+  const topbar = document.querySelector('.topbar');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const cur = window.scrollY;
+    if (cur > 40) {
+      topbar.style.boxShadow = '0 2px 20px -8px rgba(20, 56, 66, 0.15)';
+      topbar.style.background = 'rgba(250, 245, 235, 0.96)';
+    } else {
+      topbar.style.boxShadow = 'none';
+      topbar.style.background = 'rgba(250, 245, 235, 0.86)';
+    }
+    lastScroll = cur;
+  }, { passive: true });
+</script>
+
+</body>
+</html>
